@@ -1,0 +1,76 @@
+body, html {
+    width: 100%;
+    background-color: cadetblue;
+    margin: 0;
+    height: 100%;
+    
+}
+ @border:black, 3px, solid;
+
+.box {
+    height:35%;
+    width: 75%;
+    border: @border;
+    margin: auto;
+}
+.contanier {
+    border: @border;
+    margin: 80px;
+    
+    
+   
+}
+.block1 {
+    display: inline-block;
+    vertical-align: top;
+    border: @border;
+    background-color: brown;
+    text-align:start;
+    width: calc( 50% - 20px);
+    height: 25%;
+    margin:5px;
+   
+}
+.block2 {
+    .block1 ();
+    background-color: yellow;
+    text-align: end;
+    margin-left: 0;
+   
+}
+@media (max-width: 768px) {
+    .box {
+       width: 85%;
+    }
+    .contanier {
+        width: 92%;
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+    .block1 {
+        display: block;
+        width: 95%;
+        height: 25%;
+    }
+    .block2 {
+        margin-left: 5px;
+        width: 95%;
+        height: 25%;
+    }
+}
+
+    @media (max-width: 300px) {
+        .contanier{
+            width: 65%;
+        }
+        .box {
+            width: 50%;
+           
+        }
+        .block1, .block2 {
+            width: 85%;
+            height: 30px;
+            text-align: center;
+        }
+        
+    }
